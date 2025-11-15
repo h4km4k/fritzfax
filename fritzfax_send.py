@@ -37,7 +37,8 @@ DEFAULT_HEADERS = {
 
 # ---------- Hilfsfunktionen ----------
 def dbg(*args, **kwargs):
-    print("[DEBUG]", *args, **kwargs)
+    if DEBUG:
+        print("[DEBUG]", *args, **kwargs)
 
 def random_boundary(prefix="geckoformboundary"):
     suffix = "".join(random.choice("0123456789abcdef") for _ in range(32))
@@ -359,6 +360,9 @@ def load_sff_bytes_from_args(args) -> bytes:
 
 # ---------- CLI / Main ----------
 def main():
+
+    global DEBUG
+
     global FRITZBOX_URL
 
     p = argparse.ArgumentParser(description="Sende Fax über FRITZ!Box (Variante C: Autologin + multipart + Polling)")
@@ -382,6 +386,8 @@ def main():
     args = p.parse_args()
 
     FRITZBOX_URL = args.url.rstrip("/")
+
+    DEBUG = args.debug
 
     sess = requests.Session()
 
