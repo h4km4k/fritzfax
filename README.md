@@ -13,6 +13,7 @@ Ein Python-Skript zum automatisierten Senden von Faxen über die integrierte Fax
 
 **Voraussetzungen:**
 
+* `npm install canvas`
 * Python 3
 * `requests`-Modul
 * Node.js (für Text- und Bild-zu-SFF-Konvertierung)
