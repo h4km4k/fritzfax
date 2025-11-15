@@ -20,11 +20,11 @@ Ein Python-Skript zum automatisierten Senden von Faxen über die integrierte Fax
 **Beispielaufruf:**
 
 ```bash
-python3 fritzfax_send.py --user admin --pass "PASSWORD" --dest 0123456 --src 123456 --from "Mein Absender" --subject "Test" --text "Hallo Welt"
-python3 fritzfax_send.py --user admin --pass "PASSWORD" --dest 0123456 --src 123456 --text-file message.txt
-python3 fritzfax_send.py --user admin --pass "PASSWORD" --dest 012345 --src 123456 --image faxpage.png
-python3 fritzfax_send.py --user admin --pass "PASSWORD" --dest 012345 --src 123456 --sff-file fax.sff
-python3 fritzfax_send.py --user admin --pass "PASSWORD" --dest 012345 --src 123456 --sff-base64 fax.b64
+python3 fritzfax_send.py --user faxuser --pass "PASSWORD" --dest 0123456 --src 123456 --from "Mein Absender" --subject "Test" --text "Hallo Welt"
+python3 fritzfax_send.py --user faxuser --pass "PASSWORD" --dest 0123456 --src 123456 --text-file message.txt
+python3 fritzfax_send.py --user faxuser --pass "PASSWORD" --dest 0123456 --src 123456 --image faxpage.png
+python3 fritzfax_send.py --user faxuser --pass "PASSWORD" --dest 0123456 --src 123456 --sff-file fax.sff
+python3 fritzfax_send.py --user faxuser --pass "PASSWORD" --dest 0123456 --src 123456 --sff-base64 fax.b64
 ```
 
 **Ziel:**
