@@ -3,7 +3,7 @@
 fritzfax_send.py  -- Variante C: Autologin + multipart upload + start + status polling
 
 Benutzung (kurz):
-  python3 fritzfax_send.py --user admin --pass "PASSWORD" --dest 062217246021 --src 7253722 --from "Mein Absender" --subject "Test" --sff-base64 sff.b64
+  python3 fritzfax_send.py --user admin --pass "PASSWORD" --dest 0123456 --src 123456 --from "Mein Absender" --subject "Test" --sff-base64 sff.b64
 
 Optionen: siehe argparse help
 """
